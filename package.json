@@ -1,0 +1,15 @@
+{
+  "name": "ecoescola-digital",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplicação web educativa sobre Meio Ambiente e Saúde — itinerário extensionista ADS / Cruzeiro do Sul",
+  "type": "module",
+  "scripts": {
+    "dev": "node tools/dev-server.mjs",
+    "build:key": "node tools/build-answer-key.mjs",
+    "test": "node tools/run-tests.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
