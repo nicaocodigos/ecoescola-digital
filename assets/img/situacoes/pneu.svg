@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#dfe6ee"/>
+  <!-- nuvem e chuva -->
+  <g fill="#9aa8b8"><circle cx="90" cy="40" r="22"/><circle cx="120" cy="32" r="26"/><circle cx="152" cy="42" r="20"/><rect x="72" y="40" width="96" height="22" rx="11"/></g>
+  <g stroke="#4a90c2" stroke-width="3" stroke-linecap="round">
+    <path d="M84 72l-6 14M110 72l-6 14M136 72l-6 14M162 72l-6 14M98 96l-6 14M150 96l-6 14"/>
+  </g>
+  <rect y="160" width="320" height="40" fill="#8bc34a"/>
+  <!-- pneu -->
+  <ellipse cx="200" cy="150" rx="70" ry="26" fill="#222"/>
+  <ellipse cx="200" cy="146" rx="40" ry="13" fill="#7cc4ef"/>
+  <ellipse cx="200" cy="146" rx="40" ry="13" fill="none" stroke="#444" stroke-width="4"/>
+</svg>

@@ -1,0 +1,135 @@
+/* ==========================================================================
+   EcoEscola Digital — base: variáveis, reset, tipografia e componentes comuns
+   Mobile-first. Contrastes verificados para WCAG AA (texto verde #1e7a3c sobre branco ≈ 5,4:1).
+   ========================================================================== */
+:root {
+  --green-900: #0f4d24;
+  --green-700: #1e7a3c;
+  --green-600: #2e8b4a;
+  --green-500: #43a047;
+  --green-200: #c8e6c9;
+  --green-100: #e8f5e9;
+  --green-50: #f3faf4;
+  --blue-700: #0b5394;
+  --text: #1c2b22;
+  --muted: #55665b;
+  --border: #d5e4d8;
+  --white: #ffffff;
+  --danger: #b3261e;
+  --danger-bg: #fdecea;
+  --warning: #8a5300;
+  --warning-bg: #fff4e0;
+  --info: #0b5394;
+  --info-bg: #e8f1fb;
+  --success-bg: #e6f4ea;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow: 0 2px 10px rgba(15, 77, 36, 0.08);
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Arial, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--white);
+}
+img { max-width: 100%; height: auto; }
+h1, h2, h3, h4 { line-height: 1.25; margin: 0 0 0.5em; color: var(--green-900); }
+h1 { font-size: 1.6rem; }
+h2 { font-size: 1.3rem; }
+h3 { font-size: 1.1rem; }
+p { margin: 0 0 0.8em; }
+a { color: var(--green-700); }
+a:hover { color: var(--green-900); }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid #f9a825; outline-offset: 2px; border-radius: 4px; }
+h1:focus, main:focus { outline: none; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+.skip-link { position: absolute; left: -999px; top: 0; background: var(--green-900); color: #fff; padding: 0.5rem 1rem; z-index: 100; }
+.skip-link:focus { left: 0.5rem; }
+.muted { color: var(--muted); }
+.small { font-size: 0.9rem; }
+
+/* Botões */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+  min-height: 48px; padding: 0.7rem 1.2rem;
+  font: inherit; font-weight: 600; text-decoration: none; text-align: center;
+  border: 2px solid transparent; border-radius: 999px; cursor: pointer;
+  transition: background 0.15s, transform 0.05s;
+}
+.btn:active:not(:disabled) { transform: scale(0.98); }
+.btn:disabled, .btn--disabled { opacity: 0.55; cursor: not-allowed; }
+.btn--primary { background: var(--green-700); color: #fff; }
+.btn--primary:hover:not(:disabled) { background: var(--green-900); color: #fff; }
+.btn--secondary { background: var(--green-100); color: var(--green-900); border-color: var(--green-200); }
+.btn--secondary:hover { background: var(--green-200); }
+.btn--ghost { background: transparent; color: var(--green-700); border-color: var(--green-200); }
+.btn--ghost:hover:not(:disabled) { background: var(--green-50); }
+.btn--disabled { background: #eee; color: #666; }
+.btn--lg { min-height: 56px; font-size: 1.1rem; padding: 0.8rem 1.6rem; }
+.btn--sm { min-height: 40px; padding: 0.45rem 0.9rem; font-size: 0.95rem; }
+
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; }
+.actions--split { justify-content: space-between; }
+
+/* Cartões */
+.card {
+  background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 1.25rem; margin-bottom: 1rem; box-shadow: var(--shadow);
+}
+.card--center { text-align: center; }
+.card--center .actions { justify-content: center; }
+.card--muted { background: var(--green-50); box-shadow: none; }
+.card--success { background: var(--success-bg); border-color: var(--green-200); }
+
+/* Avisos */
+.notice { display: flex; gap: 0.6rem; align-items: flex-start; padding: 0.8rem 1rem; border-radius: var(--radius-sm); margin: 0 0 1rem; border-left: 5px solid; text-align: left; }
+.notice > div > :last-child { margin-bottom: 0; }
+.notice--info { background: var(--info-bg); border-color: var(--info); }
+.notice--success { background: var(--success-bg); border-color: var(--green-700); }
+.notice--warning { background: var(--warning-bg); border-color: #e09100; }
+.notice--error { background: var(--danger-bg); border-color: var(--danger); }
+.notice__icon { flex: none; }
+
+/* Formulários */
+.form { display: grid; gap: 0.6rem; }
+.field { display: grid; gap: 0.3rem; margin-bottom: 0.5rem; }
+label { font-weight: 600; }
+input[type="text"], input[type="password"], input:not([type]), select, textarea {
+  font: inherit; width: 100%; padding: 0.7rem 0.8rem; min-height: 48px;
+  border: 2px solid var(--border); border-radius: var(--radius-sm); background: #fff; color: var(--text);
+}
+input:focus, select:focus, textarea:focus { border-color: var(--green-600); }
+.field-error { color: var(--danger); font-weight: 600; min-height: 1.2em; margin: 0.25rem 0; }
+
+/* Badges e chips */
+.badge { display: inline-block; padding: 0.2rem 0.65rem; border-radius: 999px; font-size: 0.82rem; font-weight: 600; background: var(--green-100); color: var(--green-900); border: 0; font-family: inherit; }
+.badge--muted { background: #eee; color: #555; }
+.badge--warning { background: var(--warning-bg); color: var(--warning); cursor: pointer; }
+.badge--success { background: var(--success-bg); color: var(--green-900); }
+.chip { font: inherit; padding: 0.45rem 1rem; border-radius: 999px; border: 2px solid var(--green-200); background: #fff; color: var(--green-900); cursor: pointer; min-height: 44px; }
+.chip.active { background: var(--green-700); border-color: var(--green-700); color: #fff; }
+
+/* Toasts */
+.toast-region { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); z-index: 50; display: grid; gap: 0.5rem; width: min(92vw, 480px); }
+.toast { padding: 0.8rem 1rem; border-radius: var(--radius-sm); color: #fff; box-shadow: var(--shadow); font-weight: 600; }
+.toast--success { background: var(--green-700); }
+.toast--error { background: var(--danger); }
+.toast--warning { background: #9a5b00; }
+.toast--info { background: var(--blue-700); }
+
+.empty { color: var(--muted); font-style: italic; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#fff8e1"/>
+  <rect y="170" width="320" height="30" fill="#d7ccc8"/>
+  <!-- janela -->
+  <rect x="210" y="24" width="80" height="70" fill="#bbdefb" stroke="#8d6e63" stroke-width="5"/>
+  <path d="M250 24v70M210 59h80" stroke="#8d6e63" stroke-width="4"/>
+  <!-- planta -->
+  <path d="M140 110c-20-30-10-60 0-70M150 110c0-30 20-50 30-55M130 110c-15-15-30-20-40-18" stroke="#2e7d32" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- vaso -->
+  <path d="M110 108h70l-10 50h-50z" fill="#e57373"/>
+  <!-- pratinho com água -->
+  <ellipse cx="145" cy="164" rx="60" ry="10" fill="#a1887f"/>
+  <ellipse cx="145" cy="161" rx="50" ry="6" fill="#7cc4ef"/>
+  <!-- larvas -->
+  <g stroke="#333" stroke-width="2" stroke-linecap="round"><path d="M118 161h6M168 160h6M140 162h5"/></g>
+</svg>

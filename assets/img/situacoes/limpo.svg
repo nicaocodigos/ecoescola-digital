@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#e8f5e9"/>
+  <circle cx="270" cy="38" r="20" fill="#ffd54f"/>
+  <rect y="150" width="320" height="50" fill="#cfd8dc"/>
+  <!-- árvore -->
+  <rect x="44" y="90" width="12" height="60" fill="#795548"/><circle cx="50" cy="80" r="32" fill="#43a047"/>
+  <!-- lixeiras coloridas tampadas -->
+  <g>
+    <rect x="120" y="100" width="34" height="50" rx="3" fill="#1565c0"/><rect x="116" y="94" width="42" height="8" rx="3" fill="#0d47a1"/>
+    <rect x="162" y="100" width="34" height="50" rx="3" fill="#c62828"/><rect x="158" y="94" width="42" height="8" rx="3" fill="#8e0000"/>
+    <rect x="204" y="100" width="34" height="50" rx="3" fill="#2e7d32"/><rect x="200" y="94" width="42" height="8" rx="3" fill="#1b5e20"/>
+    <rect x="246" y="100" width="34" height="50" rx="3" fill="#f9c400"/><rect x="242" y="94" width="42" height="8" rx="3" fill="#c49000"/>
+  </g>
+  <path d="M100 30l8 8 16-18" stroke="#1e7a3c" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>
