@@ -7,7 +7,7 @@
  */
 
 /** URL do Web App do Google Apps Script (termina em /exec). Substitua após publicar. */
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/COLE_AQUI_O_ID_DA_IMPLANTACAO/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx2ukiClE9Eg74dqOKi6MRIHIyG11OW5SU5Z_7pbxjIUzpJAF394o2FjTBzNa2WnhVX/exec';
 
 const isLocalhost = ['localhost', '127.0.0.1'].includes(globalThis.location?.hostname);
 
